@@ -108,6 +108,7 @@ services:
       - ./.env:/opt/airflow/.env
       - ./data:/opt/airflow/data
       - ./spark_jobs:/opt/airflow/spark_jobs
+      - ./jars:/opt/airflow/jars
     depends_on:
       - mysql
       - kafka
