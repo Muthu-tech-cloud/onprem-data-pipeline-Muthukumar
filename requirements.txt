@@ -1,0 +1,7 @@
+pyspark
+kafka-python
+faker
+pymysql
+python-dotenv
+requests
+apache-airflow

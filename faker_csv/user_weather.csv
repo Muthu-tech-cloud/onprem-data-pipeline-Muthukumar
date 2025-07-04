@@ -1,0 +1,101 @@
+user_id,name,city,temperature,humidity,timestamp
+7705923a-907a-4a58-b272-41eeaeefed8b,Derrick Carpenter,Evansberg,24.57,50,2014-06-25T18:33:58
+73d1544d-a997-4ea5-bb05-cc6b83dea966,Tyler Obrien,Yuland,22.23,63,1993-06-02T19:21:06
+4a6b00e5-0256-4d96-a027-2c92c216b7e2,Brad Moreno,Bentleyfurt,23.78,61,1998-01-20T22:41:20
+744dadca-3584-433d-8d00-359f202a8489,Nicole Hood,Riddleport,37.46,48,1972-07-22T21:57:59
+ca782bd4-b59b-4d46-963d-7eff3ea7ed18,Nancy Miller,Kelseyburgh,39.12,56,1999-05-27T22:09:54
+8712f7a9-6e78-4643-a8ed-1cfe4bec18d4,Gary Howard,Harrisview,39.25,42,1996-09-14T08:09:44
+a9c80231-da76-450c-adcc-f57def7c8b71,Marissa Andersen,West Angie,24.87,73,1998-08-21T10:04:29
+6a6f87f4-502c-4221-b6c3-39e9fadf1c38,Kevin Manning,South Johnside,21.26,41,1977-07-16T22:19:02
+8097ba7f-5bd3-4ce4-80d5-1ec9c6f6aa56,Crystal Lee,West Benjamin,32.35,50,2022-06-08T03:12:57
+6c60328f-b7dc-40f0-90ea-df15a00aa4f4,Heather Thompson,New Emily,21.74,53,1996-10-09T07:22:03
+3c8ac1ef-7d10-4207-91de-606db7c62cc5,Laura Russell,Heidiview,29.07,71,1986-07-14T00:35:02
+db5f3179-13a5-4367-8186-6a37d1feee57,Catherine Evans,Michaelmouth,22.77,69,2013-08-28T00:11:54
+e80b8102-7a4d-48b1-b1a8-0daffe1ffa0e,Catherine Barber,New Jesseside,34.65,73,2011-12-29T10:56:01
+0519273c-ec7d-4835-99a9-001e040320f2,James Lewis,East Anthonybury,21.14,57,1970-03-05T08:39:18
+471b4004-3e97-44df-a76a-9a7a99066b83,Samantha Lamb,New Scottmouth,21.01,90,2025-01-04T00:32:58
+2e86659a-b776-40bb-b96e-d4106e55ecdf,David Diaz,North Chadbury,24.32,57,1999-03-10T16:18:42
+9ced40e2-f859-4d91-8b35-65f753e81029,Kimberly Wilson,Caseyberg,30.45,63,1997-05-09T17:58:05
+385c1012-eb1d-4ddd-85ec-ea06bd85c002,Jessica Baker,Johnsonshire,35.54,47,2009-09-08T03:40:12
+02395c8f-22d7-449c-aed0-f39506476939,Daniel Edwards,Bobbyside,25.11,84,1984-03-03T04:19:54
+cf02a71b-4307-4061-a952-d2c9e8f666ad,Molly Kennedy,New Ruthfort,26.62,83,2011-04-17T00:02:27
+c9b140dd-4a26-4b00-99e2-4ac12fa4fb04,Mark Grant,Millerberg,31.39,50,2021-03-31T11:04:53
+cc648b8d-753e-48ad-ac8d-72032c44e0a9,Brenda Watson,Douglasside,29.26,65,1979-05-06T15:41:53
+1bc1705e-c7e8-4440-9940-eaf5d728d1cc,Jared Moore,North Paul,24.88,46,1997-09-22T16:06:41
+216ad7f4-15d7-40a2-b412-d0ab2def3ff1,Cheryl Whitehead,Amyhaven,26.09,77,2002-06-16T00:12:16
+4a4a7196-b328-4cbc-9c28-4683e8111a1f,Jesse Murray,Fergusonfort,22.86,61,1972-02-12T21:15:38
+e5701794-488d-4985-809b-3cd76624478b,Elizabeth Hoover,East Mark,33.52,62,1980-07-15T22:19:15
+e7216745-303a-4dd0-a415-d1ecdd40c00f,Tyrone Baldwin,Catherineberg,34.86,88,1995-01-21T20:38:15
+33a04dfc-f104-4537-bd79-4012166dfe72,Deborah Jordan,East Jessicaton,38.31,42,2005-06-23T07:05:59
+47339a4d-7cb0-4e92-95e1-f4ffd1a66a9c,Randy Mayer,New Edgarmouth,20.83,47,1993-09-10T11:49:14
+ace1446d-97b9-4c45-86d7-04d8ba78288c,Stephanie Aguilar,New Heather,20.64,55,2025-05-04T14:40:01
+cc300e07-bef6-4367-b660-91424ba52b90,Jennifer Cooper,South Joshuatown,30.2,43,1971-06-16T20:38:35
+a4797931-6eb6-4cc3-b9ed-d68bcc3f37be,Jennifer Curry,Nicholsonshire,23.97,76,2009-10-27T14:59:03
+46ec5962-1477-41a5-ab18-4d39a5a0a211,Kelly Mejia,New Robert,20.83,54,1973-03-22T18:05:19
+9debaeb6-6882-48ef-902a-4e16295c7a6b,Ian Spence,West Pamtown,21.71,62,2002-11-19T01:30:45
+b8c98299-dbb0-4a3f-a7d7-1bbc94123044,Heather Bautista,Port Dana,23.54,54,1995-12-16T13:01:04
+a421107b-d696-44bf-a41b-3094e8b2c107,Jared Diaz,Thomaschester,31.74,44,1991-12-21T01:46:30
+22a59670-fb6a-4d43-8473-a8f74599f53c,Michelle Kim,Lake Michelle,31.42,82,1998-11-29T22:24:55
+b13474f7-2a55-4840-982a-97397aadfaf7,Aaron Martinez,Port Christopher,24.5,66,1985-07-21T06:25:47
+c4332371-72c5-4518-b9b9-bd7e82438f70,Vanessa Garcia,Braystad,22.96,55,2016-01-26T20:28:45
+3108daaf-3703-4609-aa5e-b6df1ce7bb2f,Jennifer Archer,East Michaelville,36.83,70,1984-11-05T05:13:22
+365cc8c4-ad14-4afb-8ffb-5fea4fddda99,Whitney Barnett,West Taylorstad,39.37,88,1992-11-10T04:32:50
+80430cd4-6b1b-4806-8de1-7366d9436295,Joshua Anderson,Shellychester,28.61,86,1984-06-10T18:24:03
+62d7b241-6be6-4ce8-8094-a8c31bbf5e96,Michael Garcia,Julieview,25.1,53,2014-03-06T17:38:08
+bdd253d0-cfff-42d0-98a8-d14ec1e776be,Anne Lewis,West Janetton,35.76,82,1970-08-23T01:28:27
+8734563b-d96d-4ea5-8128-1cbded7f1bbd,Megan Robinson,North Isabelland,35.85,78,1990-09-08T09:17:41
+6999c4ca-9d35-44ce-8b11-09718e042085,Barbara Clark,New Erik,35.14,88,1998-02-10T04:35:39
+6ebd2537-f7d1-4c6f-9fb4-72751b35db53,Jessica Smith,Katherinehaven,25.82,43,1982-09-12T17:55:12
+be783346-6b37-495f-92f7-a4ba3919ecdb,Jessica Henderson,West Erintown,34.64,52,2003-02-20T14:33:26
+40afa9f2-54f9-4056-adb3-0991a1ec3907,Kristen Price,Lake Josefort,20.5,62,2007-01-01T18:44:22
+b34991d1-d852-4d44-9082-db1381649da1,Laura Castillo,Wallshaven,33.25,48,2006-01-13T11:44:50
+bb3bccbc-6f92-47d4-8bb0-81b5051ecb46,Karen Carter,West Michaelland,29.19,71,1998-10-17T00:23:21
+d5ba4043-b569-4a85-91f8-e6d31c2a4a27,Samantha Thompson,West Angelicahaven,38.55,89,2001-10-01T13:26:31
+34c56d8d-7af6-45ce-b670-da47d64b4221,Raymond Thompson,Port Candicestad,30.11,70,1974-04-10T22:12:49
+77fd2834-c0d1-49a6-8a38-51fe52d43b0c,John Young,South Timothy,27.76,50,1999-05-08T13:04:43
+fd740b12-3562-41c4-a51f-60437c07157f,Stephen Davidson,Stonetown,35.83,53,1989-07-22T12:08:20
+283a0b8e-8e08-449c-afcf-35cd36c12904,David Palmer,South Lindaborough,31.6,82,1990-08-13T20:58:28
+638ca00e-1146-40bc-8e9a-7b3b38ea672f,Roy Cox,East Elizabethfort,38.15,54,2018-07-22T09:49:33
+e885ea31-78b6-48ce-967f-82c357370231,Sandra Rowland,Alexanderfurt,37.16,61,2012-02-20T04:04:09
+2fea0154-c608-4edb-8964-11e39419c5d1,Kimberly Delgado,Amyfurt,30.88,55,1993-01-18T03:02:33
+435276ae-25e4-4559-abcf-aae4f18ca91c,Gina Allen,South Jenny,32.11,50,1993-02-06T02:13:53
+413914e2-8d7d-4c5f-b1e8-1b6d6823ea33,Aimee Castro,Bartonbury,34.15,65,1995-12-26T02:20:48
+a8941731-cc4b-41fd-9795-1a356582a81d,Mariah Herrera,Jessicahaven,23.69,90,2015-01-05T22:41:11
+970b0b62-4fed-4f9f-91b0-acdd8205c928,Alexander Petersen,Justinville,29.67,51,2016-02-21T06:11:27
+d0a261e9-2923-4f21-9366-5d98dc377fa9,Lindsey Patel,North Caroline,23.8,49,2022-04-19T22:56:51
+53fd6909-7c9c-4a6d-94b0-6c670a3a6f2a,Veronica Robertson,Thomasburgh,27.1,51,1990-11-01T22:58:46
+aca2cf85-b890-4a54-84fb-d482afbdb926,Christine Cooley,Brianfort,27.21,55,2003-03-01T12:20:16
+6abc170b-76b4-4210-9723-2ccf12306b84,Joseph Ortega,Lake Amymouth,28.42,42,1982-04-25T13:01:13
+2fca5688-8486-43df-8f4a-28076aa88127,Donna Patterson,Rodriguezbury,28.48,78,2011-09-30T14:29:24
+0f37289d-f0b8-43ee-834f-084bd17baf77,Kristen Steele,Josephmouth,22.53,41,2002-03-21T09:59:25
+38082c28-a942-4a05-b66a-6cdf825b6a24,Sophia Robinson,North Paul,28.41,50,2012-07-05T16:02:12
+1c52e103-a712-469e-9777-494ff9285863,Louis Dixon,Christophermouth,34.15,80,1970-08-21T15:15:45
+d51d7119-b8ce-431f-88cb-a40578aeab83,Kelsey Morris,Matthewbury,37.15,55,2021-05-13T04:46:20
+9f6b75e0-92d8-466a-a1d2-c0cf11afd243,Jorge Glass,South Veronica,31.15,88,1996-09-25T13:44:00
+31c0bad7-39e3-4505-ad6a-c43d8065aca2,Tonya Harris,Lake Tinaport,30.51,44,1976-08-16T00:05:02
+15e1bd14-4124-4955-9ddf-d6517f37f70b,Susan Ortega,Lake Michaelland,32.79,86,1982-02-21T08:26:39
+5e80efd3-bacb-40df-99d7-60df988d48f8,Kevin Ruiz,South Williamton,27.94,53,2003-10-02T11:33:11
+dc0bb44b-c8d5-4eb7-aa28-6cdbd79c9726,Bridget Moore,North Juliefort,34.62,79,2017-01-11T18:18:45
+5b19eaf3-def2-4546-b5ce-a6db2cf6df54,Joshua Flores,Port Ericstad,25.54,64,1972-12-07T06:56:16
+fc189980-e95c-4bdc-a912-9ee007cf5e82,Dawn Bell,North Daniel,21.57,86,2008-03-14T19:11:55
+8ee2b4ae-8fb8-44e0-971c-b5247fd63bfa,Stephanie Thomas,Gravesmouth,22.12,50,2023-04-28T06:10:51
+cb27f602-a837-4e48-ac7c-812ede1ce36a,Todd Mayo,Lake Andrewmouth,27.45,75,2019-11-07T02:24:59
+90638e01-849f-4042-a01a-91f3b65ec9c0,William Jennings,Port Katherineville,20.17,77,1989-01-23T18:47:12
+da94cd2a-2840-4d56-a3b3-1d75c1939735,Daniel Murray,Williamston,37.63,52,2018-06-14T09:43:37
+9ab4bda7-b76b-413e-ab54-8a2bd0f917b8,Diane Moreno,Garrettton,20.06,41,1979-09-19T04:33:09
+fa1d8dc4-4e7a-43dc-bf63-89477e825ce2,Kyle Mason,Port Daniel,33.94,83,1977-12-19T01:58:58
+70461fec-1843-42e8-9b84-1619c67a8251,James Jones,East Stacy,24.37,89,2007-06-30T21:05:44
+3aced2cc-4b95-4bda-8a4d-df2a1c2cd7df,Sheena Thompson,Seanchester,30.44,56,2005-07-09T15:00:01
+e037be54-8b7f-445c-9c6d-e1bc091cd4f7,Kevin Turner,Jonathanfort,26.29,40,2020-07-25T23:40:54
+0e3f4fbe-a264-4632-8272-6c3180077585,Erin Graham,South Kimberlyfurt,38.46,57,2001-10-28T10:57:58
+d66d72cf-1862-4be6-aa63-9b8487091132,Jesse Lopez,Port Brendanstad,37.48,70,2024-08-31T04:58:16
+13ff6151-5e02-42ab-a6bb-5e64ab27c70e,Jennifer Kim,Port Samanthashire,23.44,61,1990-05-17T13:45:56
+38b571f4-e1ec-4360-a1c6-1f8d3fc6401f,Tyler Wolfe,East Jennifer,34.69,47,1990-10-01T11:16:55
+970b5465-f79d-4b31-bf2a-00a5fcbdc74b,Raven Wallace,Anthonymouth,20.2,46,1989-01-18T09:28:04
+0ed5d6bf-6f0c-4e86-b937-0e79336c1969,Michael Howell,North Davidshire,22.01,82,1993-12-18T13:06:43
+f02e0434-046d-4832-9702-07543a0dfba5,Courtney Barker,Sabrinabury,23.85,84,1997-07-14T03:47:50
+212998cf-0607-44f5-b501-6f7c31fcf109,Megan Walker,Maryville,37.79,62,2016-03-05T01:51:53
+17a2cc58-95c2-40a5-9f6e-bd89a5978af5,Allison Klein DVM,Gordontown,28.33,85,2009-06-29T15:55:10
+97b128c8-9a30-4921-9b4d-1f574169b644,Amanda Brown,Maysport,32.61,89,1970-03-13T19:20:43
+46b6853f-545c-4563-a67b-687095f201ed,Jacob Burke,New Catherine,34.19,66,2016-03-26T05:51:10
+d1d4230d-bfe4-45b7-9dbe-3ce0c1b2c5b9,Jeremy Mann,Lake Carriebury,31.37,53,1975-12-27T01:31:48

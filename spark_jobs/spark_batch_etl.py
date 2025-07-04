@@ -1,33 +1,38 @@
 from pyspark.sql import SparkSession
+import os
 
-class SparkBatchETL:
-    def __init__(self):
-        self.spark = SparkSession.builder.appName("BatchETL").enableHiveSupport().getOrCreate()
+# File and MySQL configurations
+csv_file_path = "/opt/airflow/faker_csv/user_weather.csv"
+mysql_url = "jdbc:mysql://mysql:3306/weather_db"
+mysql_table = "user_weather"
+mysql_user = os.getenv("MYSQL_ROOT_USER", "root")
+mysql_password = os.getenv("MYSQL_ROOT_PASSWORD", "root")
 
-    def run_etl(self):
-        csv_df = self.spark.read.csv("output/fake_weather.csv", header=True)
-        mysql_df = self.spark.read.format("jdbc").options(
-            url="jdbc:mysql://localhost:3306/sensordb",
-            driver="com.mysql.cj.jdbc.Driver",
-            dbtable="sensor_table",
-            user="root",
-            password="root"
-        ).load()
+# Spark session with MySQL connector
+spark = SparkSession.builder \
+    .appName("BatchETL") \
+    .config("spark.jars", "/opt/airflow/jars/mysql-connector-j-9.3.0.jar") \
+    .getOrCreate()
 
-        final_df = csv_df.join(mysql_df, "City").select("Name", "City", "Temperature", "SensorValue")
+# Read from CSV
+csv_df = spark.read.option("header", True).csv(csv_file_path)
+csv_df.show()
 
-        final_df.write.mode("overwrite").saveAsTable("final_table")
+# Read from MySQL
+mysql_df = spark.read \
+    .format("jdbc") \
+    .option("url", mysql_url) \
+    .option("dbtable", mysql_table) \
+    .option("user", mysql_user) \
+    .option("password", mysql_password) \
+    .load()
+mysql_df.show()
 
-        final_df.write.mode("overwrite").format("jdbc").options(
-            url="jdbc:mysql://localhost:3306/sensordb",
-            driver="com.mysql.cj.jdbc.Driver",
-            dbtable="final_table",
-            user="root",
-            password="root"
-        ).save()
+# Join or union (example)
+combined_df = csv_df.unionByName(mysql_df, allowMissingColumns=True)
+combined_df.show()
 
-        final_df.write.csv("output/final_csv", header=True)
-        print("[Spark] Batch ETL completed.")
+# Save result
+combined_df.write.mode("overwrite").parquet("/opt/airflow/data/batch_output/")
 
-if __name__ == "__main__":
-    SparkBatchETL().run_etl()
+print("✅ Batch ETL completed and saved to /opt/airflow/data/batch_output/")

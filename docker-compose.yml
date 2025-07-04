@@ -1,0 +1,129 @@
+version: "3.8"
+
+services:
+
+  # Zookeeper for Kafka
+  zookeeper:
+    container_name: zookeeper
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      - weather-net
+
+  # Kafka Broker
+  kafka:
+    container_name: kafka
+    image: wurstmeister/kafka:latest
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+    depends_on:
+      - zookeeper
+    networks:
+      - weather-net
+
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    hostname: mysql
+    container_name: mysql
+    ports:
+      - "33060:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: weather_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - weather-net
+
+  # Hive Metastore
+  hive-metastore:
+    container_name: hive-metastore
+    image: bde2020/hive:2.3.2-postgresql-metastore
+    environment:
+      HIVE_METASTORE_DB_TYPE: postgres
+    ports:
+      - "9083:9083"
+    depends_on:
+      - hadoop-namenode
+    networks:
+      - weather-net
+
+  # Hadoop Namenode (HDFS)
+  hadoop-namenode:
+    container_name: hadoop-namenode
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    environment:
+      CLUSTER_NAME: test-cluster
+    ports:
+      - "9870:9870"
+    volumes:
+      - hadoop_name:/hadoop/dfs/name
+    networks:
+      - weather-net
+
+  # Spark Master
+  spark:
+    image: bitnami/spark:3.5.0
+    container_name: onprem-data-pipeline-muthukumar-spark-1
+    ports:
+      - "4040:4040"
+    depends_on:
+      - kafka
+    environment:
+      - SPARK_MODE=master
+    volumes:
+      - ./spark_jobs:/opt/airflow/spark_jobs
+      - ./data:/opt/airflow/data
+      - ./jars:/opt/airflow/jars
+      - ./faker_csv:/opt/airflow/faker_csv
+    networks:
+      - weather-net
+
+  # Apache Airflow
+  airflow:
+    image: apache/airflow:2.8.0-python3.8
+    hostname: airflow
+    container_name: airflow
+    ports:
+      - "8081:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'false'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./kafka:/opt/airflow/kafka
+      - ./spark_jobs:/opt/airflow/spark_jobs
+      - ./faker_csv:/opt/airflow/faker_csv
+      - ./mysql_mock:/opt/airflow/mysql_mock
+      - ./configs:/opt/airflow/configs
+      - ./.env:/opt/airflow/.env
+      - ./data:/opt/airflow/data
+      - ./spark_jobs:/opt/airflow/spark_jobs
+    depends_on:
+      - mysql
+      - kafka
+      - hive-metastore
+    command: >
+      bash -c "
+        airflow db init &&
+        airflow users create --username admin --password admin --firstname admin --lastname admin --role Admin --email admin@example.com &&
+        airflow scheduler & airflow webserver
+      "
+    networks:
+      - weather-net
+
+networks:
+  weather-net:
+
+volumes:
+  mysql_data:
+  hadoop_name:
